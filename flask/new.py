@@ -14,9 +14,9 @@ def homepage():                #defining a home function
 
 def register():
     if request.method=="POST":
-        n=request.form.get('name')
-        c=request.form.get('city')
-        p=request.form.get('phone')
+        n=request.form.get('Name')
+        c=request.form.get('City')
+        p=request.form.get('Phone ')
         return render_template('confirm.html',name=n,city=c,phone=p)
     return "Invalid request method"
 
